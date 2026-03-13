@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamerSneaker - Play Hard. Move Smart.</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background Canvas -->
+    <canvas id="bgCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>GamerSneaker</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#content">Content</a></li>
+                <li><a href="#live">Live</a></li>
+                <li><a href="#social">Social</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="glitch" data-text="GamerSneaker">GamerSneaker</span>
+            </h1>
+            <p class="hero-tagline">Play Hard. Move Smart.</p>
+            <button class="cta-button" onclick="scrollToLive()">
+                <span>Watch Live</span>
+                <div class="button-glow"></div>
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About GamerSneaker</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Where gaming meets streetwear. We bring you the ultimate fusion of high-performance gaming content and premium sneaker culture. Live streams, epic gameplay, sneaker reviews, and exclusive drops – all in one cyberpunk universe.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="150K">0</span>
+                            <span>Followers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="500+">0</span>
+                            <span>Videos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="24/7">0</span>
+                            <span>Live Hours</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section id="content" class="content">
+        <div class="container">
+            <h2 class="section-title">Latest Highlights</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-media">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Ranked Grind #47</h3>
+                        <p>Climbing the leaderboards with insane plays</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-media">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Sneaker Unboxing</h3>
+                        <p>Latest Yeezy drops perfect for gaming sessions</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-media">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Tournament Highlights</h3>
+                        <p>1st place victory moments</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-media">
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Controller Mods</h3>
+                        <p>Custom controller builds for competitive edge</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Stream Section -->
+    <section id="live" class="live">
+        <div class="container">
+            <h2 class="section-title">Live Now</h2>
+            <div class="live-container">
+                <div class="stream-placeholder">
+                    <div class="stream-status live-status">
+                        <div class="status-indicator"></div>
+                        <span>LIVE</span>
+                    </div>
+                    <div class="stream-info">
+                        <h3>Valorant Ranked + Sneaker Talk</h3>
+                        <p>Going for Diamond • Viewer sneaker requests</p>
+                        <div class="stream-stats">
+                            <span>12.3K viewers</span>
+                            <span>•</span>
+                            <span>2h 45m live</span>
+                        </div>
+                    </div>
+                    <button class="watch-live-btn">Watch on YouTube</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="social" class="social">
+        <div class="container">
+            <h2 class="section-title">Join the Community</h2>
+            <div class="social-grid">
+                <a href="#" class="social-card youtube">
+                    <div class="social-icon">📺</div>
+                    <h3>YouTube</h3>
+                    <p>@GamerSneaker</p>
+                </a>
+                <a href="#" class="social-card instagram">
+                    <div class="social-icon">📸</div>
+                    <h3>Instagram</h3>
+                    <p>@gamersneaker</p>
+                </a>
+                <a href="#" class="social-card discord">
+                    <div class="social-icon">💬</div>
+                    <h3>Discord</h3>
+                    <p>20K members</p>
+                </a>
+                <a href="#" class="social-card twitch">
+                    <div class="social-icon">🎮</div>
+                    <h3>Twitch</h3>
+                    <p>Live every day</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>GamerSneaker</h3>
+                    <p>Play Hard. Move Smart.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GamerSneaker. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
