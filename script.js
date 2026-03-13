@@ -291,10 +291,10 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const platform = card.classList[1];
             const links = {
-                youtube: 'https://youtube.com/@GamerSneaker',
-                instagram: 'https://instagram.com/gamersneaker',
-                discord: 'https://discord.gg/gamersneaker',
-                twitch: 'https://twitch.tv/gamersneaker'
+                youtube: 'https://youtube.com/@ISneakerboy',
+                instagram: 'https://instagram.com/gamer_sneaker2',
+                discord: 'https://discord.gg/VSrsYpqPNr',
+              
             };
             window.open(links[platform], '_blank');
         });
